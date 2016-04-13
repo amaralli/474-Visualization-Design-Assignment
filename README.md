@@ -1,1 +1,1 @@
-# 474VisualizationDesignAssignment
+# 474 Visualization Design Assignment
