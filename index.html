@@ -1,45 +1,63 @@
 <html>
-<head>
+    <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>474 Data Visualization Assignment 1</title>
 
-        <!-- Includes plotly.js -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <!-- Includes plotly.js -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-    <!-- Includes jQuery and jQuery UI--> 
-    <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+        <!-- Includes jQuery and jQuery UI--> 
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!--<link rel="stylesheet" href="css/main.css">
-        <link rel="icon" href="img/site-icon.png">-->
-    <!--<link rel="stylesheet" href="./css/jquery-ui.css">-->
-        
+        <!-- Include bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Includes plotly work-->
+        <script src="./js/main.js"></script>
+            
     </head>
-<body class="container">
-    <header class="page-header">
-        <h1>Data Visualization Stand-In Title</h1>
-    </header>
+    <body class="container">
+        <header class="page-header">
+            <h1>Data Visualization Stand-In Title</h1>
+        </header>
 
-    <div id="summary">
-        <h2>This is where the explanation of the data set would go</h2>
-    </div>
+        <div id="summary">
+            <h3>In these data sets, we attempt to explore the relationship between bacteria and various antibacerials. In these data, effectiveness is measured (MCI) in addition to the results of gram-staining tests for each bacteria/antibacterial combination. </h3>
+        </div>
 
-    <div id="graphExplain1">
-        <div id="graph1"></div>
-        <h2>GRAPH EXPLANATION HERE</h2>
-    </div>
+        <div id="graphExplain1">
+            <div id="graph1"></div>
+            <h4>Explanation of this graph:</h4>
+            <p>This first visualization attempts to answer the question: How effective is penicilin against various bacteria types. I chose this because penicilin is the most well know antibiotic, and had a good spread of data.</p>
 
-    <div id="graphExplain2">
-        <div id="graph2"></div>
-        <h2>GRAPH EXPLANATION HERE</h2>
-    </div>
+            <p>I chose to use a bar graph, largely because it's simple. Humans are good at quickly reading position along a common scale, so these values are easily comparable. A scatter plot also relies on this type of perceptual element, but I chose a bar graph instead, because I didn't want viewers to accidentally draw a connection between these points.</p>
 
-    <div id="graphExplain3">
-        <div id="graph3"></div>
-        <h2>GRAPH EXPLANATION HERE</h2>
-    </div>
+            <p>Scatterplots often lead people into accidentally creating connections because it allows people to subconsiously look for a trend in direction. Essentially, people often end up drawing imaginary lines between points, but since this data is nominal, and there is no connection between each type of bacteria- I didn't want people to see trends that cannot exist.</p>
+        </div>
 
-</body>
+        <div id="graphExplain2">
+            <div id="graph2"></div>
+            <h4>Explanation of this graph:</h4>
+
+            <p>This graph attempts to see if there is any correlation between neomycin's effectiveness and the gram staining result. In this graph, negative is the pink/reddish hue, and purple represents a positive reaction in the Gram staining test.</p>
+
+            <p>I chose bar graphs once again, out of fear that viewers might create false connections between each point in a scatterplot. I also chose to use color to illustrate the Gram staining results, because color adds another, easily discernable type of perception, without impeding on the other type of information (effectiveness) being presented. I also chose these colors, because red/green is often hard to determine for the color-blind.</p>
+
+            <p>In a perfect world, this would have a legend to show what each color meant. However, to be honest, that was just not happening. =(</p>
+        </div>
+
+        <div id="graphExplain3">
+            <div id="graph3"></div>
+            <h4>Explanation of this graph:</h4>
+
+            <p>This graph is meant to allow the user to compare two different antibiotics and see which ones were more effective for various kinds of bacteria.</p>
+
+            <p>I chose a grouped bar chart so that the user could easily see that they were intended to compare the two values against the same variable (effectiveness of one antibiotic against the other over the same bacteria). Grouped bar charts are great because they fall close enough that they user can use position along a common scale, while still falling within the proximity that Weber's Law looks for.</p>
+
+            <p>I chose these colors because they're easy to discern from each other, are distinct enough that even if the values are small (which some are), you can still pick out each bar on it own, and so that the user doesn't have to rely on picking apart differences in saturation- just hue.</p>
+        </div>
+
+    </body>
 </html>
