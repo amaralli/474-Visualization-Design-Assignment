@@ -5,7 +5,7 @@
 //waits for the dom to be ready before altering it
 $(document).ready(function() {
 	//loads data
-	Plotly.d3.csv('../antibiotics_data.csv', function(error, data) {
+	Plotly.d3.csv('./antibiotics_data.csv', function(error, data) {
 
 		//draws each visualization
 		drawGraph1(data);
